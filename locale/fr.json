@@ -1,0 +1,116 @@
+{
+	"quizLoadSuccess":[
+		"Ok sire, je suis prêt !",
+		"Prêt ? En avant !!!"
+	],
+	"quizLoadFailed":[
+		"Zut, je bite rien au quiz : <quizId>!",
+		"Désolé Sire, mais je ne trouve pas le quiz: <quizId> ...",
+		"<quizId> n'existe pas, me prenez pas pour un jambon !"
+	],
+	"quizNotLoadedYet":[
+		"Aucun quiz en cours",
+		"Pour le moment, pas de quiz"
+	],
+	"quizLoadFailedEmpty":[
+		"Mais soyez pas con ! Indiquez le nom du quiz ! 'start quiz MONQUIZ'!"
+	],
+	"quizAlreadyRunning":[
+		"There's already a quiz running!"
+	],
+	"quizFinished":[
+		"WOuhou on a fini !",
+		"Terminé !"
+	],
+	"quizPaused":[
+		"Sire, prenons une petite pause."
+	],
+	"quizResumed":[
+		"Nous voilà de retour."
+	],
+	"quizStopped":[
+		"Bon ok, on arrête ...",
+		"J'ai dis une connerie ? Ok on arrête là ..."
+	],
+	"correctAnswer":[
+		"Là c'est le <user> que je connais ! Bonne réponse: <answer>! <points> de plus.",
+		"Bien joué <user> ! <answer> est la bonne réponse! <points> .",
+		"<answer> ? C'est pas faux ! <points> pour toi.",
+		"Oui oui oui! <points> pour toi <user>."
+	],
+	"correctAnswers2":[
+		"Là c'est le <user> que je connais ! Bonne réponse: <answer>! <points> de plus.",
+		"Bien joué <user> ! <answer> est la bonne réponse! <points> .",
+		"<answer> ? C'est pas faux ! <points> pour toi.",
+		"Oui oui oui! <points> pour toi <user>."
+	],
+	"correctAnswers":[
+		"Là c'est le <user> que je connais ! Bonne réponse: <answer>! <points> de plus.",
+		"Bien joué <user> ! <answer> est la bonne réponse! <points> .",
+		"<answer> ? C'est pas faux ! <points> pour toi.",
+		"Oui oui oui! <points> pour toi <user>."
+	],
+	"otherPossibleAnswer":[
+		"Tu pouvez aussi répondre <answer>.",
+		"<answer> est une réponse que j'aurais aussi accepté!"
+	],
+	"questionPrepFirst":[
+		"Ok bourgeois, c'est parti !"
+	],
+	"questionPrep":[
+		"Question suivante",
+		"Ok, question numéro <number>...",
+		"Place à la question <number>..."
+	],
+	"questionPrepLast":[
+		"Attention, dernière question !",
+		"La dernière question arrive ..."
+	],
+	"questionTimeout":[
+		"Et voilà, trop tard :)",
+		"Bong! le temps est écoulé ..."
+	],
+	"incorrectAnswer":[
+		"NON NON NON",
+		"Faux, faux, faux, incorrect et erroné !",
+		"Allez faites un effort quoi !",
+		"T'es aussi con que Caradoc !",
+		"C'est pas la bonne réponse !"
+	],
+	"correctAnswerSingle":[
+		"The correct answer is <data>",
+		"The answer is <data>",
+		"It was actually <data>!",
+		"I was looking for <data> there.",
+		"<data> is what I wanted to hear there."
+	],
+	"correctAnswerMultiple":[
+		"The correct answers were <data>",
+		"The answers are <data>",
+		"I was looking for <data>!"
+	],
+	"leads":[
+		"leads",
+		"heads the board",
+		"is in front"	
+	],
+	"wins":[
+		"Victoire",
+		"Gagne",
+		"l'a emporté"
+	],
+	"latestScores":[
+		"Voilà les scores :trophy: ",
+		"Champion :trophy:",
+		"Qui est le moins con de tous ? :trophy:"
+	],
+	"finalScores":[
+		"Score finaux :trophy: ",
+		"Regarde qui est le moins noob de ta team :trophy:",
+		"Moi non plus j'y crois pas, mais c'est :trophy: qui a gagné"
+	],
+	"closer":[
+		"Roucoulette ! A bientot :wave:",
+		"Merci on se voit au prochain push :clap:"
+	]
+}

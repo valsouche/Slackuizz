@@ -1,0 +1,28 @@
+{
+  "questions":[
+    {
+      "text": "Vous nous utilisés bon gré, mal gré pour arriver sur vos fins ?",
+      "answers": [
+        {
+          "text":["Oui"]
+        }
+      ]
+    },
+    {
+      "text": "C'est pas faux ? \n reponse 1: Oui \n reponse 2: Non",
+      "answers": [
+        {
+          "text":["1"]
+        }
+      ]
+    },
+    {
+      "text": "Qui est le plus beau ?",
+      "answers": [
+        {
+          "text":["Val"]
+        }
+      ]
+    }
+  ]
+}
