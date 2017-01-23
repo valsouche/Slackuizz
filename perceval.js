@@ -1,34 +1,39 @@
-var QuizBot = require('slackquizbot');
+var app = require('express')();
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
+var QuizBot = require('slackquizbot')
 
-var express = require('express');
+var myQuizBot = new QuizBot("xoxb-111352045732-1ok2WbC0UoReCeNFrfWem7Wh", "fr");
+var score = [];
 
-var myQuizBot = new QuizBot("xoxb-111352045732-EpQx8mkB1iK0gOFcg9HOA3ve", "fr");
-
-// console.log('QuizBot ' + myQuizBot);
-
-// myQuizBot.startQuiz();
-
-var app = express();
-
-var server = app.listen(8081, function () {
-    console.log("Example app listening");
-})
-
-app.post('/api/github', function (req, res) {
-
-
-    res.send('hello world');
+app.get('/', function(req, res){
+  res.sendFile(__dirname + '/index.html');
 });
 
-var slackChanel = "C3DGRQNSF";
-var quizId= "myquiz";
+io.on('connection', function(socket){
+  console.log('Raspberry connecté');
+});
+
+io.on('score', function(socket){
+  console.log('Score ajouté');
+});
+
 app.get('/api/quiz-start', function (req, res) {
+    var slackChanel = "C3DGRQNSF";
+    var quizId= "myquiz";
     try {
-        var c = myQuizBot.getContext();
-        console.log(c);
         myQuizBot.startQuiz(quizId, slackChanel, quizId);
     } catch (err) {
         console.log(err);
     }
 });
 
+myQuizBot.addScore = function(points, user) {
+    score.push({user: user, score:1})
+    console.log(score)
+    io.sockets.emit('score')
+}
+
+http.listen(3000, function(){
+  console.log('Perceval est éveillé sur le port 3000 :)');
+});

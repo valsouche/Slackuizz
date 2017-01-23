@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
-    "slackquizbot": "^0.1.11"
+    "slackquizbot": "^0.1.11",
+    "socket.io": "^1.7.2"
   }
 }
