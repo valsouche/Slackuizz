@@ -30,28 +30,16 @@
 	],
 	"quizStopped":[
 		"Bon ok, on arrête ...",
-		"J'ai dis une connerie ? Ok on arrête là ..."
+		"J'ai dit une connerie ? Ok on arrête là ..."
 	],
 	"correctAnswer":[
-		"Là c'est le <user> que je connais ! Bonne réponse: <answer>! <points> de plus.",
-		"Bien joué <user> ! <answer> est la bonne réponse! <points> .",
-		"<answer> ? C'est pas faux ! <points> pour toi.",
-		"Oui oui oui! <points> pour toi <user>."
-	],
-	"correctAnswers2":[
-		"Là c'est le <user> que je connais ! Bonne réponse: <answer>! <points> de plus.",
-		"Bien joué <user> ! <answer> est la bonne réponse! <points> .",
-		"<answer> ? C'est pas faux ! <points> pour toi.",
-		"Oui oui oui! <points> pour toi <user>."
-	],
-	"correctAnswers":[
-		"Là c'est le <user> que je connais ! Bonne réponse: <answer>! <points> de plus.",
+		"OMG <user>, t'es moins con qu'il n'y parait ! <points>",
 		"Bien joué <user> ! <answer> est la bonne réponse! <points> .",
 		"<answer> ? C'est pas faux ! <points> pour toi.",
 		"Oui oui oui! <points> pour toi <user>."
 	],
 	"otherPossibleAnswer":[
-		"Tu pouvez aussi répondre <answer>.",
+		"Tu pouvais aussi répondre <answer>.",
 		"<answer> est une réponse que j'aurais aussi accepté!"
 	],
 	"questionPrepFirst":[
@@ -71,11 +59,9 @@
 		"Bong! le temps est écoulé ..."
 	],
 	"incorrectAnswer":[
-		"NON NON NON",
-		"Faux, faux, faux, incorrect et erroné !",
-		"Allez faites un effort quoi !",
-		"T'es aussi con que Caradoc !",
-		"C'est pas la bonne réponse !"
+		"Si c'est pour dire des conneries...",
+		"OH OH OH tu vas la fermer ta gueule !",
+		"Toi, ça se voit que tu es à l'EPSI..."
 	],
 	"correctAnswerSingle":[
 		"The correct answer is <data>",
