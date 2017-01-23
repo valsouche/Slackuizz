@@ -1,7 +1,8 @@
 var QuizBot = require('slackquizbot');
+
 var express = require('express');
 
-var myQuizBot = new QuizBot("xoxb-111352045732-3f0uGWmsMZ7p3cirmJ1JT0H1", "fr");
+var myQuizBot = new QuizBot("xoxb-111352045732-EpQx8mkB1iK0gOFcg9HOA3ve", "fr");
 
 // console.log('QuizBot ' + myQuizBot);
 
@@ -30,3 +31,4 @@ app.get('/api/quiz-start', function (req, res) {
         console.log(err);
     }
 });
+
