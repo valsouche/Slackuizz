@@ -3,7 +3,7 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var QuizBot = require('slackquizbot')
 
-var myQuizBot = new QuizBot("xoxb-111352045732-1ok2WbC0UoReCeNFrfWem7Wh", "fr");
+var myQuizBot = new QuizBot("xoxb-111352045732-jPc3eUeu60YS1Eboa041o4Ef", "fr");
 var score = [];
 
 app.get('/', function(req, res){
