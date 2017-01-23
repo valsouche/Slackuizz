@@ -36,5 +36,5 @@ myQuizBot.addScore = function(points, user) {
 }
 
 http.listen(port, function(){
-  console.log('Perceval est éveillé sur le port 3000 :)');
+  console.log('Perceval est éveillé sur le port: ' + port);
 });
