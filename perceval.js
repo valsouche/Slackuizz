@@ -12,29 +12,24 @@ app.get('/', function(req, res){
 });
 
 io.on('connection', function(socket){
-  console.log('Raspberry connecté');
-});
 
-io.on('score', function(socket){
-  console.log('Score ajouté');
-});
+  app.get('/api/quiz-start', function (req, res) {
+      var slackChanel = "C3DGRQNSF";
+      var quizId= "myquiz";
+      try {
+          myQuizBot.startQuiz(quizId, slackChanel, quizId);
+          socket.emit('start_quiz')
+      } catch (err) {
+          console.log(err);
+      }
+  });
 
-app.get('/api/quiz-start', function (req, res) {
-    var slackChanel = "C3DGRQNSF";
-    var quizId= "myquiz";
-    try {
-        myQuizBot.startQuiz(quizId, slackChanel, quizId);
-        io.sockets.emit('start_quiz')
-    } catch (err) {
-        console.log(err);
-    }
+  myQuizBot.addScore = function(points, user) {
+      score.push({user: user, score:1})
+      console.log(score)
+      socket.emit('end_quiz')
+  }
 });
-
-myQuizBot.addScore = function(points, user) {
-    score.push({user: user, score:1})
-    console.log(score)
-    io.sockets.emit('end_quiz')
-}
 
 http.listen(port, function(){
   console.log('Perceval est éveillé sur le port: ' + port);
