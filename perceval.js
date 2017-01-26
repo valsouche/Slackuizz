@@ -24,6 +24,7 @@ app.get('/api/quiz-start', function (req, res) {
     var quizId= "myquiz";
     try {
         myQuizBot.startQuiz(quizId, slackChanel, quizId);
+        io.sockets.emit('start_quiz')
     } catch (err) {
         console.log(err);
     }
@@ -32,7 +33,7 @@ app.get('/api/quiz-start', function (req, res) {
 myQuizBot.addScore = function(points, user) {
     score.push({user: user, score:1})
     console.log(score)
-    io.sockets.emit('score')
+    io.sockets.emit('end_quiz')
 }
 
 http.listen(port, function(){

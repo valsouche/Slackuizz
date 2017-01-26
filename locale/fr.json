@@ -33,10 +33,10 @@
 		"J'ai dit une connerie ? Ok on arrête là ..."
 	],
 	"correctAnswer":[
-		"OMG <user>, t'es moins con qu'il n'y parait ! <points>",
-		"Bien joué <user> ! <answer> est la bonne réponse! <points> .",
-		"<answer> ? C'est pas faux ! <points> pour toi.",
-		"Oui oui oui! <points> pour toi <user>."
+		"OMG <user>, t'es moins con qu'il n'y parait ! 1 points pour toi.",
+		"Bien joué <user> ! <answer> est la bonne réponse! 1 point de plus.",
+		"<answer> ? C'est pas faux ! 1 pour toi.",
+		"Oui oui oui! 1 pour toi <user>."
 	],
 	"otherPossibleAnswer":[
 		"Tu pouvais aussi répondre <answer>.",
