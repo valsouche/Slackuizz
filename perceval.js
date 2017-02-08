@@ -6,6 +6,7 @@ var QuizBot = require('slackquizbot')
 var port = process.env.PORT || 3000
 var myQuizBot = new QuizBot("xoxb-111352045732-jPc3eUeu60YS1Eboa041o4Ef", "fr");
 var score = [];
+var mySocket;
 
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
@@ -14,12 +15,18 @@ app.get('/', function(req, res){
 io.on('connection', function(socket){
   console.log('Un client est connecté')
   console.log(socket.id)
+  mySocket = socket;
 });
 
 app.get('/api/quiz-start', function (req, res) {
     var slackChanel = "C3DGRQNSF";
     var quizId= "myquiz";
     try {
+      if (mySocket !== undefined) {
+        console.log(mySocket.id)
+      } else {
+        console.log('Et meeeeerde')
+      }
         myQuizBot.startQuiz(quizId, slackChanel, quizId);
     } catch (err) {
         console.log(err);
