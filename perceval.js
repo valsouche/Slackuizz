@@ -15,17 +15,18 @@ app.get('/', function(req, res){
 io.on('connection', function(socket){
   console.log('Un client est connecté')
   console.log(socket.id)
+  socket.emit('message', 'lol')
   mySocket = socket;
 });
 
-app.get('/api/quiz-start', function (req, res) {
+app.post('/api/quiz-start', function (req, res) {
     var slackChanel = "C3DGRQNSF";
     var quizId= "myquiz";
     try {
       if (mySocket !== undefined) {
-        console.log(mySocket.id)
+        mySocket.emit('start_quiz', 'Coucou petit raspberry')
       } else {
-        console.log('Et meeeeerde')
+        console.log('Et meeeeerde (Début du quiz)')
       }
         myQuizBot.startQuiz(quizId, slackChanel, quizId);
     } catch (err) {
@@ -34,8 +35,12 @@ app.get('/api/quiz-start', function (req, res) {
 });
 
 myQuizBot.addScore = function(points, user) {
-    score.push({user: user, score:1})
     console.log(score)
+    if (mySocket !== undefined) {
+        mySocket.emit('end_quiz', {user: user, score:1})
+      } else {
+        console.log('Et meeeeerde (Fin du quiz)')
+      }
 }
 
 http.listen(port, function(){
