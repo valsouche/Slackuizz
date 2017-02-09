@@ -43,7 +43,9 @@
 		"<answer> est une réponse que j'aurais aussi accepté!"
 	],
 	"questionPrepFirst":[
-		"Ok bourgeois, c'est parti !"
+		"Ok bourgeois, c'est parti !",
+		"Un PUSH !!!! A vos claviers !!!!",
+		"Quelqu'un a pusher ! Tenez-vous prêt ..."
 	],
 	"questionPrep":[
 		"Question suivante",
@@ -59,9 +61,10 @@
 		"Bong! le temps est écoulé ..."
 	],
 	"incorrectAnswer":[
-		"Si c'est pour dire des conneries...",
-		"OH OH OH tu vas la fermer ta gueule !",
-		"Toi, ça se voit que tu es à l'EPSI..."
+		"Si c'est pour dire des conneries ne dis rien...",
+		"OH OH OH tu vas fermer ta mouille, c'est faux !",
+		"Toi, ça se voit que tu es à l'EPSI...",
+		"Il va nous gonfler longtemps avec ses mauvaises réponses ?"
 	],
 	"correctAnswerSingle":[
 		"The correct answer is <data>",

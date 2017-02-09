@@ -1,26 +1,50 @@
 {
   "questions":[
     {
-      "text": "Vous nous utilisés bon gré, mal gré pour arriver sur vos fins ?",
+      "text": "Qu'est ce qui est petit et marron ?",
       "answers": [
         {
-          "text":["Oui"]
+          "text":["marron"]
         }
       ]
     },
     {
-      "text": "C'est pas faux ? \n reponse 1: Oui \n reponse 2: Non",
+      "text": "Un chateau hanté concerne la forme de ce dernier, vrai ou faux ?",
       "answers": [
         {
-          "text":["1"]
+          "text":["faux"]
         }
       ]
     },
     {
-      "text": "Qui est le plus beau ?",
+      "text": "Comment doit être le mouvement du bras (par rapport au sol) afin de casser des plaques de pierre sans problème ?",
       "answers": [
         {
-          "text":["Val"]
+          "text":["péremptoire"]
+        }
+      ]
+    },
+    {
+      "text": "Le premier qui tape 'rhododendron' a gagné !",
+      "answers": [
+        {
+          "text":["rhododendron"]
+        }
+      ]
+    },
+    {
+      "text": "Le fenouil est il redondant ?",
+      "answers": [
+        {
+          "text":["oui et non"]
+        }
+      ]
+    },
+    {
+      "text": "Sloubi 1, Sloubi 2, Sloubi 3, Sloubi 4, Sloubi 5, Sloubi 6 ...",
+      "answers": [
+        {
+          "text":["sloubi"]
         }
       ]
     }
