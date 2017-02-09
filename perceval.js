@@ -4,7 +4,7 @@ var io = require('socket.io')(http);
 var QuizBot = require('slackquizbot')
 
 var port = process.env.PORT || 3000
-var myQuizBot = new QuizBot("xoxb-111352045732-jPc3eUeu60YS1Eboa041o4Ef", "fr");
+var myQuizBot = new QuizBot("", "fr");
 var score = [];
 var mySocket;
 
